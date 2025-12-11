@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- META TAGS (brief) -->
+    <meta
+      name="keywords"
+      content="sailing, sailing school, RYA, Fethiye Yelken, Yelken okulu, Charter"
+    />
+    <meta name="author" content="Tolga Deniz – Creativeideai.com" />
+    <meta
+      name="description"
+      content="Irmak Yachting – Göcek merkezli RYA sertifikalı yelken okulu ve yat kiralama hizmetleri."
+    />
+    <!-- OPEN GRAPH TAGS -->
+    <meta
+      property="og:title"
+      content="Irmak Yachting – RYA Sailing School & Yacht Charter Göcek"
+    />
+    <meta
+      property="og:description"
+      content="Göcek merkezli RYA onaylı yelken okulu ve yat kiralama hizmetleri."
+    />
+    <meta
+      property="og:image"
+      content="https://www.irmakyachting.com/img/og-preview.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://www.irmakyachting.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Irmak Yachting" />
+
+    <!-- GOOGLE FONT (Poppins) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- ANA CSS -->
+    <link rel="stylesheet" href="style/main.css" />
+
+    <title>Irmak Yachting</title>
+  </head>
+  <body>
+    <!-- SABİT MENU BAR -->
+    <header id="main-header">
+      <div class="header-inner">
+        <!-- LOGO (LEFT) -->
+        <div class="logo">
+          <img src="img/irmak_yachting_logo.png" alt="Irmak Yachting Logo" />
+        </div>
+
+        <!-- DESKTOP MENU (CENTER) -->
+        <nav class="main-nav">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">FLEET</a>
+          <a href="#">PRICES</a>
+          <a href="#">RESERVATION</a>
+          <a href="#">ROUTES</a>
+          <a href="#">BLOG</a>
+          <a href="#">CONTACT</a>
+        </nav>
+
+        <!-- SOCIAL + DİLLER + HAMBURGER (RIGHT) -->
+        <div class="right-side">
+          <div class="social">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="WhatsApp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="langs">
+            <span
+              >TR<br />
+              <img src="img/flags/tr.png" alt="Türkçe" />
+            </span>
+            <span
+              >EN<br />
+              <img src="img/flags/en.png" alt="English" />
+            </span>
+            <span
+              >DE<br />
+              <img src="img/flags/de.png" alt="Deutsch" />
+            </span>
+            <span
+              >RU<br />
+              <img src="img/flags/ru.png" alt="Русский" />
+            </span>
+          </div>
+
+          <!-- HAMBURGER MENU (responsive) -->
+          <button id="hamburger" aria-label="Menu">☰</button>
+        </div>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <nav id="mobile-nav">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">FLEET</a>
+        <a href="#">PRICES</a>
+        <a href="#">RESERVATION</a>
+        <a href="#">ROUTES</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTACT</a>
+      </nav>
+    </header>
+
+    <!-- MAIN SLIDER -->
+    <section id="slider">
+      <div class="slide">
+        <img src="img/irmak_yacht_charter.jpg" alt="Irmak Yacht Charter" />
+      </div>
+      <div class="slide">
+        <img src="img/gocek_fethiye.jpg" alt="Göcek Fethiye" />
+      </div>
+      <div class="slide">
+        <img
+          src="img/irmak_RYA_sailing_school.jpg"
+          alt="Irmak RYA Sailing School"
+        />
+      </div>
+
+      <!-- SLIDER DOTS -->
+      <div id="dots"></div>
+    </section>
+    <!-- RESERVATION SECTION -->
+    <section id="reservation-bar">
+      <div class="reserv-container">
+        <div class="reserv-left">
+          <h2b>RESERVATION</h2b>
+          <p>REQUEST FOR AVAILABILITY</p>
+        </div>
+
+        <form class="reserv-form">
+          <label>From</label>
+          <input type="date" />
+
+          <label>To</label>
+          <input type="date" />
+
+          <label>Adults</label>
+          <input type="number" min="1" />
+
+          <label>Children</label>
+          <input type="number" min="0" />
+
+          <label>Yacht</label>
+          <select>
+            <option>Select...</option>
+          </select>
+
+          <button class="reserv-btn">NEXT</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <!-- Sol taraf: tam yükseklik görsel -->
+      <div class="about-left">
+        <img src="img/about_us.jpg" alt="Irmak Yachting – About Us" />
+      </div>
+
+      <!-- Sağ taraf: metin -->
+      <div class="about-right">
+        <h2>ABOUT US</h2>
+        <p>
+          Your Local Agency in Göcek for Charter License and Transit Log,
+          Bareboat &amp; Skippered Charter, Flotilla Sailing, Sailing School,
+          Yacht Management and Maintenance.<br /><br />
+          Irmak Yachting's main base is in Göcek which is surrounded by heavenly
+          atmosphere. It is a perfect place for cruising among Fethiye and Göcek
+          bays.
+          <a href="#">DEVAMI</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 3 – PARALLAX IMAGE -->
+    <section id="parallax"></section>
+
+    <!-- SECTION 2 – OUR FLEET -->
+    <section id="fleet" class="section">
+      <div class="fleet-header">
+        <h2>OUR FLEET</h2>
+        <a href="yachts.html" class="view-all">SEE ALL YACHTS →</a>
+      </div>
+
+      <div class="fleet-grid">
+        <!-- KOLON 1 -->
+        <article class="fleet-item">
+          <div class="fleet-img-wrapper">
+            <img
+              src="img/bavaria_cruiser_46_orion.jpg"
+              alt="Bavaria CRUISER 46 - Orion"
+            />
+          </div>
+          <ul>
+            <li><strong>Length:</strong> 46' (13,60m)</li>
+            <li><strong>People:</strong> 8 max</li>
+            <li><strong>Cabins:</strong> 4</li>
+            <li><strong>Toilets:</strong> 3</li>
+          </ul>
+        </article>
+
+        <!-- KOLON 2 -->
+        <article class="fleet-item">
+          <div class="fleet-img-wrapper">
+            <img src="img/lagoon_40_falcon.jpg" alt="Lagoon 40 - Falcon" />
+          </div>
+          <ul>
+            <li><strong>Length:</strong> 40' (11.74m)</li>
+            <li><strong>People:</strong> 10 max</li>
+            <li><strong>Cabins:</strong> 4+2</li>
+            <li><strong>Toilets:</strong> 4 (electric)</li>
+          </ul>
+        </article>
+
+        <!-- KOLON 3 -->
+        <article class="fleet-item">
+          <div class="fleet-img-wrapper">
+            <img
+              src="img/bavaria_cruiser_cadenza_41.jpg"
+              alt="Bavaria Cruiser 41 - Cadenza"
+            />
+          </div>
+          <ul>
+            <li><strong>Length:</strong> 41' (12.35m)</li>
+            <li><strong>People:</strong> 8 max</li>
+            <li><strong>Cabins:</strong> 3</li>
+            <li><strong>Toilets:</strong> 2</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <!-- SECTION 3 – PARALLAX IMAGE -->
+    <section id="parallax2"></section>
+    <!-- SECTION 4 – BLOG -->
+    <section id="blog" class="section">
+      <div class="blog-header">
+        <h2>BLOG</h2>
+        <a href="blog.html" class="view-all-blog">SEE ALL POSTS →</a>
+      </div>
+
+      <div class="blog-grid">
+        <!-- KOLON 1 -->
+        <article class="blog-item">
+          <div class="blog-img-wrapper">
+            <img src="img/gocek_koylari.jpg" alt="Göcek Koyları Hakkinda" />
+          </div>
+          <p>
+            Teknelerimizde Vira Demir kitabının Göçek Körfezi kısmını
+            bulabilirsiniz; Hem Göcek Körfezi (Osmanağa Çeşmesi, Atbükü,
+            Boynuzbükü, Killebükü, Taşyaka Koyu (Bedri Rahmi), Sıralıbük Limanı,
+            Sarsala, Manastır Koyu, Kapı Koyu, <a href="#">DEVAMI</a>
+          </p>
+        </article>
+
+        <!-- KOLON 2 -->
+        <article class="blog-item">
+          <div class="blog-img-wrapper">
+            <img src="img/transit_log.jpg" alt="Transit Log" />
+          </div>
+          <p>
+            Transit Log veya Türkçe ismi ile seyir izin belgesi (daha önceleri
+            yat kayıt belgesi ismi de kullanılmış) seyre çıkanların kim olduğunu
+            ve kaptanın bilgilerini içeren resmi bir belgedir. Bu belge T.C.
+            Ulaştırma Denizcilik ve <a href="#">DEVAMI</a>
+          </p>
+        </article>
+
+        <!-- KOLON 3 -->
+        <article class="blog-item">
+          <div class="blog-img-wrapper">
+            <img src="img/gocek_koylari2.jpg" alt="Göcek Koylarına Çözüm" />
+          </div>
+          <p>
+            …Ve nihayet!.. Göcek Yat Mola Noktaları için müjdeli haber geldi.
+            Göbün, Küçük Sarsala, Bedri Rahmi (Taşyaka) ve Manastır (Akbük)
+            Koyları’nı yaklaşık 30 yıldan bu yana işletmekte olan Yörük Aileleri
+            bir araya gelerek bir kooperatif <a href="#">DEVAMI</a>
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- BACK TO TOP ARROW -->
+    <div id="backToTop">
+      <span class="arrow-up">▲</span>
+    </div>
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <!-- KOLON 1: ADRES -->
+        <div class="footer-col">
+          <h3b>IRMAK YACHTING</h3b>
+          <p>
+            MARINTURK Göcek Village Port<br />
+            Büngüş Koyu Göcek 48310 Fethiye<br />
+            Muğla TURKEY
+          </p>
+
+          <p>
+            Phone :<br />
+            +90 (530) 761 1020<br />
+            +90 (537) 660 0009<br />
+            +90 (555) 453 4936<br /><br />
+
+            Base Manager:<br />
+            +90 (555) 453 4936<br /><br />
+
+            E-mail : info@irmakyachting.com<br /><br />
+
+            GPS : 36.75562, 28.933037<br />
+            +36° 45' 20.23", +28° 55' 58.93"
+          </p>
+
+          <p class="copyright">© 2025 Irmak Yachting. All Rights Reserved.</p>
+        </div>
+
+        <!-- KOLON 2: FORM -->
+        <div class="footer-col">
+          <form>
+            <input
+              type="text"
+              name="fullname"
+              placeholder="Full Name*"
+              required
+            />
+            <input type="email" name="email" placeholder="E-mail*" required />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Phone Number*"
+              required
+            />
+            <textarea name="message" placeholder="Message*" required></textarea>
+
+            <label for="captcha">I am not a robot test : 2 + 3 = ?</label>
+            <input type="text" id="captcha" name="captcha" required />
+
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ANA JS -->
+    <script src="style/script.js"></script>
+  </body>
+</html>
