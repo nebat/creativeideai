@@ -48,9 +48,9 @@ function handleLanguageAndDeviceRedirect() {
   if (lang === "tr" && !isMobile) {
     targetPath = "/index.html";
   } else if (lang === "tr" && isMobile) {
-    targetPath = "/pages/mobil/mobil_tr_index.html";
+    targetPath = "pages/mobil/mobil_tr_index.html";
   } else if (lang === "en" && !isMobile) {
-    targetPath = "/pages/eng/index_en.html";
+    targetPath = "pages/mobil/mobil_tr_index.html";
   } else if (lang === "en" && isMobile) {
     targetPath = "/pages/mobil/mobil_en_index.html";
   }
@@ -122,5 +122,6 @@ function startHeroCaptionCycle() {
     captions[index].classList.add("active");
   }, 7000);
 }
+
 
 
