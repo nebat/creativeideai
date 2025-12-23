@@ -1,0 +1,238 @@
+/* GLOBAL */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mukta Vaani', sans-serif;
+  background: #313131;
+  color: #ffffff;
+}
+
+/* MENU BAR */
+.menu-bar {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo-area {
+  width: 140px;
+  background: #313131;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-area {
+  width: 226px;
+  background: #f57500;
+  color: #fff;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.whatsapp-area {
+  width: 64px;
+  background: #3b3b3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* =========================
+   DROPDOWN (Desktop top menu)
+   ========================= */
+
+.has-dd {
+  position: relative;
+  height: 100%;
+  display: inline-flex;
+  align-items: stretch;
+}
+
+.dd-toggle {
+  height: 100%;
+  padding: 0 12px;
+  border: 0;
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: .6px;
+
+  transition: background-color .18s ease, transform .18s ease;
+}
+
+.dd-toggle:hover,
+.has-dd.is-open .dd-toggle {
+  background: var(--orange);
+  transform: translateY(-1px);
+}
+
+.dd-menu {
+  position: absolute;
+  top: var(--topbar-h);
+  left: 0;
+  min-width: 260px;
+
+  background: var(--dark);
+  box-shadow: var(--shadow);
+  padding: 8px 0;
+  margin: 0;
+  list-style: none;
+
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+  z-index: 60;
+}
+
+.has-dd.is-open .dd-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dd-menu a {
+  display: block;
+  padding: 12px 16px;
+  color: var(--white);
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: .6px;
+}
+
+.dd-menu a:hover {
+  background: var(--orange);
+}
+
+/* Contact dropdown daha dar olabilir */
+.dd-menu--contact {
+  min-width: 300px;
+}
+
+/* =========================
+   Drawer dropdown (1000px altı)
+   ========================= */
+
+.drawer-dd__toggle {
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  border: 0;
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: .6px;
+}
+
+.drawer-dd__toggle:hover {
+  background: var(--orange);
+}
+
+.drawer-dd__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  background: rgba(255, 255, 255, .04);
+}
+
+.drawer-dd.is-open .drawer-dd__menu {
+  display: block;
+}
+
+.drawer-dd__menu a {
+  display: block;
+  padding: 10px 22px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.drawer-dd__menu a:hover {
+  background: var(--orange);
+}
+/* MOBILE MENU */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #313131;
+}
+
+.mobile-menu a {
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  background: #f57500;
+}
+
+/* HERO */
+.hero-top,
+.hero-bottom {
+  background: #3b3b3b;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+  display: none;
+}
+
+.caption.active {
+  display: block;
+}
+
+.caption button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #f57500;
+  border: none;
+  color: #fff;
+}
+
+/* SERVICES */
+.services {
+  background: #313131;
+}
+
+.service-box {
+  height: 365px;
+  padding: 15px;
+}
+
+.service-box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  background: #3b3b3b;
+  padding: 20px;
+  text-align: center;
+}
