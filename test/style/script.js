@@ -46,13 +46,13 @@ function handleLanguageAndDeviceRedirect() {
   let targetPath = "";
 
   if (lang === "tr" && !isMobile) {
-    targetPath = "/index.html";
+    targetPath = "pages/mobil/mobil_tr_index.html";
   } else if (lang === "tr" && isMobile) {
     targetPath = "pages/mobil/mobil_tr_index.html";
   } else if (lang === "en" && !isMobile) {
     targetPath = "pages/mobil/mobil_tr_index.html";
   } else if (lang === "en" && isMobile) {
-    targetPath = "/pages/mobil/mobil_en_index.html";
+    targetPath = "pages/mobil/mobil_tr_index.html";
   }
 
   if (targetPath && !currentPath.endsWith(targetPath)) {
@@ -122,6 +122,7 @@ function startHeroCaptionCycle() {
     captions[index].classList.add("active");
   }, 7000);
 }
+
 
 
 
