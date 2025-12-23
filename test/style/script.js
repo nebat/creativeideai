@@ -11,6 +11,7 @@
 ========================= */
 document.addEventListener("DOMContentLoaded", () => {
   startHeroCaptionCycle();
+     handleLanguageAndDeviceRedirect();
   initHamburger();
 });
 /* =========================
@@ -122,6 +123,7 @@ function startHeroCaptionCycle() {
     captions[index].classList.add("active");
   }, 7000);
 }
+
 
 
 
