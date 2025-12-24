@@ -30,52 +30,7 @@ function initHamburger() {
   });
 }
 
-/* =========================
-   LANGUAGE + DEVICE REDIRECT
-========================= */
-function handleLanguageAndDeviceRedirect() {
-  const currentPath = window.location.pathname;
 
-  // Redirect loop koruması
-  if (currentPath.includes("index_mobil") || currentPath.includes("index_en")) {
-    return;
-  }
-
-  const lang = getPreferredLanguage(); // "tr" | "en"
-  const isMobile = window.innerWidth < 500;
-
-  let targetPath = "";
-
-  if (lang === "tr" && !isMobile) {
-    targetPath = "pages/mobil/mobil_tr_index.html";
-  } else if (lang === "tr" && isMobile) {
-    targetPath = "pages/mobil/mobil_tr_index.html";
-  } else if (lang === "en" && !isMobile) {
-    targetPath = "pages/mobil/mobil_tr_index.html";
-  } else if (lang === "en" && isMobile) {
-    targetPath = "pages/mobil/mobil_tr_index.html";
-  }
-
-  if (targetPath && !currentPath.endsWith(targetPath)) {
-    window.location.replace(targetPath);
-  }
-}
-
-/* =========================
-   LANGUAGE DETECTION
-========================= */
-function getPreferredLanguage() {
-  const cookieLang = getCookie("site_lang");
-  if (cookieLang) return cookieLang;
-
-  const languages = navigator.languages || [];
-
-  const hasTurkish = languages.some(lang =>
-    lang.toLowerCase().startsWith("tr")
-  );
-
-  return hasTurkish ? "tr" : "en";
-}
 
 /* =========================
    MANUAL LANGUAGE SELECT
@@ -123,6 +78,7 @@ function startHeroCaptionCycle() {
     captions[index].classList.add("active");
   }, 7000);
 }
+
 
 
 
