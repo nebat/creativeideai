@@ -309,6 +309,10 @@ body {
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
 }
+.lang-inline a{
+  text-decoration: none;
+    color: inherit;
+}
 
 .lang-item:hover {
   background: #313131;
@@ -492,5 +496,134 @@ body {
 
   to {
     transform: translateX(-33.33333%);
+  }
+}
+/* ===================================================
+   MOBILE OVERRIDES – MERGED
+=================================================== */
+
+/* Varsayılan (DESKTOP): mobil servisler GİZLİ */
+.m-services {
+  display: none;
+}
+
+/* ===================================================
+   500px ve ALTINDA (MOBİL)
+=================================================== */
+@media (max-width: 500px) {
+
+  /* HERO alt alta */
+  .hero {
+    flex-direction: column;
+    aspect-ratio: auto;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+  
+.hero-caption-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 300px;
+  background: #313131;
+}
+
+.hero-caption-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  background: #f57500;
+}
+/* ================= HERO TEXT (WEB) ================= */
+
+.hero-text {
+  position: absolute;
+  left: 150px;
+  top: calc(50% + 22px);
+  transform: translateY(-50%);
+  max-width: 620px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+.hero-text.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hero-text h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 44px;
+  line-height: 1;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+
+.t-web {
+  color: #f57500;
+}
+
+.t-design {
+  color: #ffffff;
+}
+
+.hero-text p {
+  font-family: 'Mukta Vaani', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  max-width: 420px;
+  margin-left: 6px;
+}
+
+  /* CAROUSEL mobil davranış */
+  .carousel {
+    height: auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel-track {
+    animation: none;
+  }
+
+  .carousel-item {
+    min-width: 80vw;
+    scroll-snap-align: start;
+  }
+
+  /* MOBİL SERVİS KARTLARI */
+  .m-services {
+    display: block;
+    padding: 24px 16px;
+    background: #313131;
+  }
+
+  .service-card {
+    margin-bottom: 24px;
+  }
+
+  .service-card img {
+    width: 100%;
+    display: block;
+  }
+
+  .service-card h3 {
+    margin: 12px 0 6px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
   }
 }
