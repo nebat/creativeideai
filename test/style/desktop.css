@@ -511,7 +511,17 @@ body {
    500px ve ALTINDA (MOBİL)
 =================================================== */
 @media (max-width: 500px) {
+.h-social-lang {
+    width: 100px;
+    background: #f57500;
+    color: #fff;
+    display: flex;
+    align-items: right;
+  }
 
+  .h-social-lang i {
+    display: none;
+  }
   /* HERO alt alta */
   .hero {
     flex-direction: column;
