@@ -1,0 +1,89 @@
+/* =====================
+   MOBILE OVERRIDES
+===================== */
+
+/* Varsayılan: desktop’ta GİZLİ */
+.m-services {
+  display: none;
+}
+
+/* =====================
+   500px ALTINDA
+===================== */
+@media (max-width: 500px) {
+
+  /* HERO alt alta */
+  .hero {
+    flex-direction: column;
+    aspect-ratio: auto;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-text {
+    left: 16px;
+    top: auto;
+    bottom: 16px;
+    transform: none;
+    max-width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+    white-space: normal;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  /* Carousel parmak uyumlu */
+  .carousel {
+    height: auto;
+  }
+
+  .carousel-track {
+    animation: none;
+  }
+
+  .carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel-item {
+    min-width: 80vw;
+    scroll-snap-align: start;
+  }
+
+  /* MOBİL SERVİSLER AÇIK */
+  .m-services {
+    display: block;
+    padding: 24px 16px;
+    background: #313131;
+  }
+
+  .service-card {
+    margin-bottom: 24px;
+  }
+
+  .service-card img {
+    width: 100%;
+    display: block;
+  }
+
+  .service-card h3 {
+    margin: 12px 0 6px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+  }
+}
