@@ -622,7 +622,7 @@ display: none;
 
 .hero-text h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 44px;
+  font-size: 24px;
   line-height: 1;
   margin-bottom: 16px;
   white-space: nowrap;
@@ -688,4 +688,5 @@ display: none;
     color: #ccc;
     line-height: 1.5;
   }
+
 }
