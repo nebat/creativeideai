@@ -61,6 +61,10 @@ body {
   align-items: center;
 }
 
+.logo-desktop {
+  display: block;
+}
+
 .logo-mobile {
   display: none;
 }
