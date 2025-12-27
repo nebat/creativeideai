@@ -622,7 +622,7 @@ display: none;
 
 .hero-text h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 1;
   margin-bottom: 16px;
   white-space: nowrap;
@@ -638,7 +638,7 @@ display: none;
 
 .hero-text p {
   font-family: 'Mukta Vaani', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.6;
   color: #e0e0e0;
   max-width: 420px;
@@ -690,5 +690,6 @@ display: none;
   }
 
 }
+
 
 
