@@ -565,7 +565,8 @@ display: none;
   height: 100%;
 }
 .hamburger {
-  width: 25px;
+  margin-left: 20px;
+  margin-right: 16px;
 }
 .h-whatsapp {
   width: 80px;
@@ -752,4 +753,5 @@ display: none;
 }
 
 }
+
 
