@@ -566,6 +566,7 @@ display: none;
 }
 .hamburger {
   margin-left: 20px;
+  width: 30px;
   margin-right: 16px;
 }
 .h-whatsapp {
@@ -753,5 +754,6 @@ display: none;
 }
 
 }
+
 
 
