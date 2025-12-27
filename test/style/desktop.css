@@ -605,8 +605,8 @@ display: none;
 
 .hero-text {
   position: absolute;
-  left: 90px;
-  top: 100px;
+  left: 0px;
+  top: 0px;
   transform: translateY(-50%);
   max-width: 620px;
   opacity: 0;
@@ -689,6 +689,7 @@ display: none;
   }
 
 }
+
 
 
 
