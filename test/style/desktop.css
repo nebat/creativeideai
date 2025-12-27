@@ -568,7 +568,7 @@ display: none;
   width: 25px;
 }
 .h-whatsapp {
-  width: 120px;
+  width: 80px;
   background: #3b3b3b;
   color: #fff;
   display: flex;
@@ -578,11 +578,14 @@ display: none;
   font-size: 13px;
   cursor: pointer;
 }
+.h-whatsapp i {
+  font-size: 24px;
+}
 .h-whatsapp span {
   display: none;
 }
-  .h-social-lang {
-    width: 150px;
+.h-social-lang {
+    width: 200px;
     background: #f57500;
     color: #fff;
     display: flex;
@@ -749,3 +752,4 @@ display: none;
 }
 
 }
+
