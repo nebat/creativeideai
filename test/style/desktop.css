@@ -578,7 +578,10 @@ display: none;
   font-size: 13px;
   cursor: pointer;
 }
-.h-social-lang {
+.h-whatsapp span {
+  display: none;
+}
+  .h-social-lang {
     width: 150px;
     background: #f57500;
     color: #fff;
@@ -744,4 +747,5 @@ display: none;
     color: #ffffff;
   }
 }
+
 }
