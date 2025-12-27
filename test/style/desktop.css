@@ -606,8 +606,8 @@ display: none;
 
 .hero-text {
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 50px;
+  top: 50px;
 
   max-width: 620px;
   opacity: 0;
@@ -690,3 +690,4 @@ display: none;
   }
 
 }
+
