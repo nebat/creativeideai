@@ -398,6 +398,7 @@ body {
   position: absolute;
   left: 150px;
   top: calc(50% + 22px);
+
   max-width: 920px;
   opacity: 0;
   pointer-events: none;
@@ -605,9 +606,9 @@ display: none;
 
 .hero-text {
   position: absolute;
-  left: 0px;
-  top: 0px;
-  transform: translateY(-50%);
+  left: 100px;
+  top: 90px;
+
   max-width: 620px;
   opacity: 0;
   pointer-events: none;
@@ -687,12 +688,4 @@ display: none;
     color: #ccc;
     line-height: 1.5;
   }
-
 }
-
-
-
-
-
-
-
