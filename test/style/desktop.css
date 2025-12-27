@@ -398,7 +398,6 @@ body {
   position: absolute;
   left: 150px;
   top: calc(50% + 22px);
-  transform: translateY(-50%);
   max-width: 920px;
   opacity: 0;
   pointer-events: none;
@@ -690,6 +689,7 @@ display: none;
   }
 
 }
+
 
 
 
