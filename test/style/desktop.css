@@ -165,6 +165,7 @@ body {
 /* ================= HAMBURGER ================= */
 
 .hamburger {
+  background: #313131;
   display: none;
   width: 24px;
   height: 18px;
@@ -562,7 +563,7 @@ body {
   }
 
   .h-logo {
-    width: 165px;
+    width: 159px;
     background: #313131;
     display: flex;
     align-items: end;
@@ -583,12 +584,19 @@ body {
 
   .hamburger {
     margin-left: 20px;
-    width: 30px;
+    width: 50px;
     margin-right: 16px;
   }
-
+.hamburger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
   .h-whatsapp {
-    width: 80px;
+    width: 50px;
     background: #3b3b3b;
     color: #fff;
     display: flex;
