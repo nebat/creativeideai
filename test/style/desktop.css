@@ -5,11 +5,7 @@
 @media (max-width: 1500px) {
   :root {
     --header-h: 64px;
-  }  
-  .hero-caption-left,
-  .hero-caption-right {
-    width: 64px;
-    }
+  }
 }
 
 * {
@@ -394,6 +390,15 @@ body {
   height: 200px;
   background: #f57500;
 }
+
+@media (max-width: 1500px) {
+
+  .hero-caption-left,
+  .hero-caption-right {
+    width: 64px;
+  }
+}
+
 /* ================= HERO TEXT (WEB) ================= */
 
 .hero-text {
