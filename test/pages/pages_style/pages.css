@@ -768,7 +768,8 @@ body {
       font-size: 14px;
       max-width: 480px;
     }
-  .footer {
-   padding: 20px 40px;
+  .footer-inner {
+    flex-direction: column;
   }
 }
+
