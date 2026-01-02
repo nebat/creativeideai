@@ -1,0 +1,774 @@
+/* ===================================================
+   PAGE WRAPPER & GLOBAL
+=================================================== */
+
+.page-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===================================================
+   GLOBAL
+=================================================== */
+
+body {
+  background: #313131;
+  color: #222;
+}
+/* ===================================================
+   HERO SINGLE
+=================================================== */
+.hero-caption-left {
+  height: 250px;
+}
+
+.hero-caption-right {
+  height: 170px;
+}
+.hero_single {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1920 / 420;
+  overflow: hidden;
+}
+
+.hero_single img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* ===================================================
+  ------------------ PSEUDO ------------------------
+=================================================== */
+.check {
+  position: relative;
+  padding-left: 28px;
+}
+
+.check::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f57500;
+  /* yeşil ya da marka rengi */
+  font-weight: 700;
+}
+/* ===================================================
+   OFFER SECTION
+=================================================== */
+
+.offer-section {
+  background-color: #ffffff;
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.offer-section h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.offer-sub {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.offer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.offer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+  gap: 32px;
+}
+
+.offer-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 10px;
+  width: 250px;
+    align-items: center;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
+}
+.offer-card:hover {
+  background: #f9F9F9;
+  transform: scale(1.025);
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+.offer-card h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.offer-card h4 {
+  color: #f57500;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.offer-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.offer-card li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.offer-card-brand li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 0.8;
+}
+/* GOLD */
+
+.offer-card.highlight {
+  background: #f57500;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+.offer-card.highlight h4,
+.offer-card.highlight li {
+  color: #ffffff;
+}
+
+.badge {
+  display: inline-block;
+  background: #313131;
+  color: #ffffff;
+  font-size: 11px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 1px;
+}
+
+/* PLUS ICON */
+
+.offer-plus {
+  font-size: 48px;
+  color: #0aa84f;
+  display: flex;
+  align-items: center;
+}
+
+/* ADD-ON */
+
+.offer-card.web-management {
+  width: 260px;
+  background: #0aa84f;
+  color: #ffffff;
+}
+
+.offer-card.web-management h3,
+.offer-card.web-management p,
+.offer-card.web-management li {
+  color: #ffffff;
+    line-height: 1.1;
+}
+
+.addon-sub {
+  margin-bottom: 10px;
+}
+
+.addon-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+/* ===================================================
+   SPLIT SECTIONS (WHY / PROCESS) – SIMPLE VERSION
+=================================================== */
+
+.split-section1 {
+  background: #F6F6F6;
+}
+.split-section2 {
+  background: #F6F6F6;
+}
+
+.split-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding: 0px 24px;
+}
+
+/* IMAGE */
+
+.split-image {
+  width: 600px;
+  height: 420px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* CONTENT */
+
+.split-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.split-content-inner {
+  max-width: 600px;
+}
+.split-content h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+.split-content h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.brand h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  padding-top: 10px;
+  margin-bottom: 6px;
+}
+.split-content p {
+      font-family: 'Oswald', sans-serif;
+      font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 16px;
+}
+.target-list {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    padding-left: 80px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+/* IMAGE ORDER */
+
+.image-left .split-image {
+  order: 1;
+}
+
+.image-left .split-content {
+  order: 2;
+}
+
+.image-right .split-content {
+  order: 1;
+}
+
+.image-right .split-image {
+  order: 2;
+}
+
+/* ===================================================
+   PARALLAX STARTER PACK
+=================================================== */
+
+.starter-parallax {
+  height: 420px;
+  background-image: url("../../img/parallax.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.starter-parallax h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.starter-parallax p,
+.starter-parallax li {
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  max-width: 720px;
+  text-decoration: none;
+  list-style:none;
+  margin: 0 auto;
+}
+/* ===================================================
+   PARALLAX BUTTONS
+=================================================== */
+.starter-cta {
+ margin-top: 20px;
+}
+.starter-parallax .starter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 12px;
+  margin-right: 16px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+.starter-parallax .starter-btn:hover {
+  background: #313131;
+  color: #ffffff;
+}
+
+/* SECONDARY (WhatsApp) */
+
+.starter-parallax .starter-btn.secondary {
+  background: #5ff36e;
+    color: #111;
+}
+
+.starter-parallax .starter-btn.secondary:hover {
+  background: #25d366;
+  color: #fff;
+}
+/* ===================================================
+   PORTFOLIO TEASER
+=================================================== */
+
+.portfolio-teaser {
+  background: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  padding: 30px 0;
+}
+.portfolio-teaser h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+.portfolio-sub {
+  background: #ffffff;
+  padding-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.portfolio-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.portfolio-card {
+  background: #f6F6F6;
+  border-radius: 12px;
+  flex: 0 0 280px;
+  overflow: hidden;
+  height: 400px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.portfolio-card h2 {
+  font-size: 24px;
+  padding-top: 10px;
+  text-align: center;
+}
+.portfolio-card p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  color: #444;
+  text-align: justify;
+}
+.portfolio-more {
+  margin-top: 32px;
+  font-size: 14px;
+    color: #f57500;
+    text-decoration: none;
+}
+.portfolio-more:hover {
+  margin-top: 32px;
+  font-size: 14px;
+  color: #3c3c3c;
+  text-decoration: none;
+}
+.portfolio-card:hover {
+  background: #f9F9F9;
+  transform: scale(1.025);
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+/* Mouse resmin üzerine gelince tıklanabilir olduğunu anlasın */
+.portfolio-thumb {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.portfolio-thumb:hover {
+  opacity: 0.8;
+  /* Hafif bir parlama efekti */
+}
+
+/* Lightbox Arka Planı (Tüm ekranı kaplayan siyah örtü) */
+.lightbox-overlay {
+  display: none;
+  /* İlk başta gizli */
+  position: fixed;
+  z-index: 9999;
+  /* Her şeyin en üstünde görünsün */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  /* %85 koyu siyah */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lightbox içindeki büyük resim */
+.lightbox-image {
+  max-width: 90%;
+  max-height: 80%;
+  border: 3px solid #ffffff;
+  /* Senin turuncu rengin */
+  border-radius: 4px;
+}
+
+/* Kapatma butonu (X) */
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  color: #ff6600;
+  /* Üzerine gelince turuncu olsun */
+}
+/* ===================================================
+   FOOTER
+=================================================== */
+.footer {
+  background: #313131;
+  color: #ffffff;
+  padding: 20px 80px;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* Mobil uyum için */
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-left h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.footer-left p {
+  margin: 6px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.footer-left .copyright {
+  margin-top: 10px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.footer-right {
+  flex: 1.5;
+  /* Form alanı biraz daha geniş olsun */
+  min-width: 320px;
+  position: relative;
+  padding-bottom: 80px;
+    /* Butonun formun altında rahat durması için boşluk */
+}
+
+/* Form Tasarımı */
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-form h3 {
+  color: #ff6600;
+  /* Senin meşhur turuncu */
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.footer-form input,
+.footer-form select,
+.footer-form textarea {
+  width: 100%;
+  padding: 12px;
+  background: #1a1a1a;
+  /* Koyu arka plan */
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.footer-form input:focus,
+.footer-form textarea:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+.footer-form button {
+  background: #ff6600;
+  color: #000;
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.footer-form button:hover {
+  background: #fff;
+  color: #ff6600;
+}
+/* Back to Top butonu konumu */
+
+
+
+/* Senin mevcut buton stilin (Küçük bir display eklemesiyle) */
+.back-to-top {
+  position: fixed;
+  /* Sayfadan bağımsız sabitlendi */
+  right: 30px;
+  /* Sağdan boşluk */
+  bottom: 30px;
+  /* Alttan boşluk */
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  /* Oku ortalamak için */
+  align-items: center;
+  justify-content: center;
+  background: #3b3b3b;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  z-index: 999;
+  /* Her şeyin üstünde dursun */
+
+  /* İlk başta gizli ve biraz aşağıda başlasın (efekt için) */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+/* Buton görünür olduğunda çalışacak sınıf */
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  background: #ff6600;
+  /* Göründüğünde senin turuncu rengin olsun */
+}
+
+.back-to-top:hover {
+  background: #fff;
+  color: #ff6600;
+  transform: scale(1.1);
+  /* Üzerine gelince hafif büyüsün */
+}
+/* ===================================================
+                  RESPONSIVE
+=================================================== */
+@media (max-width: 1500px) {
+
+  .hero-caption-left {
+      width: 64px;
+      height: 200px;
+    }
+  .hero-caption-right {
+    width: 64px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+.split-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0px 24px;
+}
+/* IMAGE */
+
+.split-image {
+  width: 400px;
+  height: 280px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+}
+
+
+@media (max-width: 500px) {
+  .hero-caption-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0px;
+      height: 0px;
+      background: #313131;
+    }  
+    .hero-caption-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0px;
+      height: 0px;
+      background: #f57500;
+    }
+    .hero_single {
+      aspect-ratio: auto;
+      /* ratio’yu kapat */
+      height: 180px;
+      /* mobil için istediğin yükseklik */
+    }
+  
+    .hero_single img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* sağ–sol crop */
+      object-position: center;
+    }
+  .offer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .offer-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-plus {
+    margin: 4px 0;
+    align-items: center;
+  }
+
+  .offer-card,
+  .offer-card.web-management {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .offer-card.highlight {
+    transform: none;
+  }
+  .split-inner {
+  flex-direction: column;
+  align-items: center;
+  max-width: 480px;
+  }
+  .split-content-inner {
+    max-width: 480px;
+  }
+  .image-right .split-image {
+    order: 1;
+  }
+.split-image {
+  width: 300px;
+  height: 210px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+  .image-right .split-content {
+    order: 2;
+  }
+    .starter-parallax h2 {
+      font-size: 26px;
+    } 
+    .starter-parallax p,
+    .starter-parallax li {
+
+      font-size: 14px;
+      max-width: 480px;
+    }
+  .footer {
+   padding: 20px 40px;
+  }
+}
