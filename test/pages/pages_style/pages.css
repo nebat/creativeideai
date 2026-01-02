@@ -582,4 +582,16 @@ body {
   .image-right .split-content {
     order: 2;
   }
+       .starter-parallax 
+    .starter-parallax h2 {
+      font-size: 26px;
+    } 
+    .starter-parallax p,
+    .starter-parallax li {
+
+      font-size: 14px;
+      max-width: 480px;
+    }
 }
+}
+
