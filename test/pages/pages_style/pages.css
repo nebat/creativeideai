@@ -331,7 +331,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 32px;
+  padding: 14px 12px;
   margin-right: 16px;
   font-family: 'Oswald', sans-serif;
   font-size: 14px;
@@ -497,9 +497,13 @@ body {
 =================================================== */
 @media (max-width: 1500px) {
 
-  .hero-caption-left,
+  .hero-caption-left {
+      width: 64px;
+      height: 200px;
+    }
   .hero-caption-right {
     width: 64px;
+    height: 150px;
   }
 }
 
@@ -537,7 +541,7 @@ body {
       top: 0;
       left: 0;
       width: 0px;
-      height: 300px;
+      height: 0px;
       background: #313131;
     }  
     .hero-caption-right {
@@ -547,6 +551,20 @@ body {
       width: 0px;
       height: 0px;
       background: #f57500;
+    }
+    .hero_single {
+      aspect-ratio: auto;
+      /* ratio’yu kapat */
+      height: 250px;
+      /* mobil için istediğin yükseklik */
+    }
+  
+    .hero_single img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* sağ–sol crop */
+      object-position: center;
     }
   .offer-row {
     flex-direction: column;
@@ -574,11 +592,11 @@ body {
   .split-inner {
   flex-direction: column;
   align-items: center;
-   max-width: 480px;
-}
-.split-content-inner {
- max-width: 480px;
-}
+  max-width: 480px;
+  }
+  .split-content-inner {
+    max-width: 480px;
+  }
   .image-right .split-image {
     order: 1;
   }
@@ -587,7 +605,7 @@ body {
     order: 2;
   }
     .starter-parallax h2 {
-      font-size: 18px;
+      font-size: 26px;
     } 
     .starter-parallax p,
     .starter-parallax li {
@@ -596,9 +614,3 @@ body {
       max-width: 480px;
     }
 }
-}
-
-
-
-
-
