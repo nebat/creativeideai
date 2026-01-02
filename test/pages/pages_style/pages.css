@@ -555,7 +555,7 @@ body {
     .hero_single {
       aspect-ratio: auto;
       /* ratio’yu kapat */
-      height: 200px;
+      height: 150px;
       /* mobil için istediğin yükseklik */
     }
   
@@ -614,5 +614,6 @@ body {
       max-width: 480px;
     }
 }
+
 
 
