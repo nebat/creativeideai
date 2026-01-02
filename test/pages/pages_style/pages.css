@@ -583,7 +583,7 @@ body {
     order: 2;
   }
     .starter-parallax h2 {
-      font-size: 26px;
+      font-size: 18px;
     } 
     .starter-parallax p,
     .starter-parallax li {
@@ -593,6 +593,7 @@ body {
     }
 }
 }
+
 
 
 
