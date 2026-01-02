@@ -338,7 +338,7 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-
+  border-radius: 5px;
   background: #ffffff;
   color: #111;
   transition: all 0.3s ease;
@@ -594,4 +594,5 @@ body {
     }
 }
 }
+
 
