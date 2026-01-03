@@ -75,7 +75,7 @@ body {
 .offer-sub {
   color: #555;
    padding: 0px 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 15px;
 }
 
@@ -769,6 +769,12 @@ body {
   .image-right .split-content {
     order: 2;
   }
+   .parallax-span {
+  font-size: 18px;
+  padding: 4px 4px;
+  border-radius: 5px;
+  margin-bottom: 1px;
+}
     .starter-parallax h2 {
       font-size: 26px;
     } 
@@ -787,6 +793,7 @@ body {
             }
    
 }
+
 
 
 
