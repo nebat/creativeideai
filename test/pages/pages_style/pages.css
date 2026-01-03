@@ -777,8 +777,14 @@ body {
       font-size: 14px;
       max-width: 480px;
     }
-            .footer-inner {
+       
+     .footer {
+  padding: 20px 20px;
+}
+   .footer-inner {
               flex-direction: column;
             }
+   
 }
+
 
