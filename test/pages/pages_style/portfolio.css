@@ -91,17 +91,18 @@
         font-size: 12px;
     }
         .portfolio-all-grid {
-            grid-template-columns: repeat(auto-fill, 120px);
+            grid-template-columns: repeat(auto-fill, 80px);
         }
 .portfolio-item {
-    width: 120px;
-    height: 85px;
+    width: 80px;
+    height: 57px;
 }
 .portfolio-item img {
     width: 100%;
     height: 100%;
 }
 }
+
 
 
 
