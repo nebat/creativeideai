@@ -74,6 +74,7 @@ body {
 
 .offer-sub {
   color: #555;
+   padding: 0px 10px;
   margin-bottom: 20px;
   font-size: 15px;
 }
@@ -786,6 +787,7 @@ body {
             }
    
 }
+
 
 
 
