@@ -96,7 +96,7 @@ body {
   background: #ffffff;
   border-radius: 14px;
   padding: 20px 10px;
-  width: 250px;
+  width: 300px;
     align-items: center;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
 }
@@ -786,6 +786,7 @@ body {
             }
    
 }
+
 
 
 
