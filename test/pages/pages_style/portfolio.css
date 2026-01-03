@@ -80,5 +80,24 @@
     opacity: 1;
 
 }
+/* ===================================================
+                  RESPONSIVE
+=================================================== */
+@media (max-width: 500px) {
+.filter-btn {
+        color: #fff;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+.portfolio-item {
+    width: 180px;
+    height: 127px;
+}
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+}
+}
 
 
